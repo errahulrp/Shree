@@ -1,29 +1,19 @@
 import React from 'react'
-import background from '../images/sirisvisual-J4M9FKPEaUA-unsplash.jpg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div>
             {/* This is for the Desktop */}
             <div className=' hidden sm:block '>
-                <div className='flex justify-center'>
-                    <img src={background} alt="Background image" className=' sm:mt-48 md:mt-60 w-[90%] sm:h-48 md:h-60 lg:h-72 object-cover rounded-3xl opacity-75' />
-                </div>
-                <div className=' flex justify-center'>
-                    <h1 className=' absolute sm:text-3xl md:text-4xl font-Salsa sm:-mt-28 md:-mt-32 lg:-mt-40 opacity-100 '>LET'S DISSCUSS YOUR PROJECT</h1>
-                    <div className=' absolute sm:-mt-16 md:-mt-16 lg:-mt-24 '>
-                        <button className=' bg-indigo-600 text-white hover:text-black hover:bg-[#ECE7E1] px-4 py-1 rounded-3xl'>CONTACT US</button>
-                    </div>
-                </div>
-                <div className=' flex flex-col items-center mt-20 mb-10 '>
+                <div className=' flex flex-col items-center mt-20 mb-5 '>
                     <div className=' flex sm:gap-16 md:gap-28 lg:gap-36 items-center'>
-                        <div className=' text-4xl font-Salsa '>Shree</div>
+                        <div className=' text-4xl font-Salsa '><Link to='/'>Shree</Link></div>
                         <div>
                             <ul className=' flex gap-6 font-Truculenta '>
-                                <li>ABOUT US</li>
-                                <li>OUR SERVICES</li>
-                                <li>PROJECTS</li>
-                                <li>MEDIA</li>
+                                <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/">Home</Link></li>
+                                <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/about">About Us</Link></li>
+                                <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                         <div className=' flex gap-5'>
@@ -41,7 +31,7 @@ const Footer = () => {
                     <div className=' border-b-2 border-black sm:w-[90%] md:w-[90%] lg:w-[60%] mt-3'></div>
                     <div className=' flex justify-between font-Truculenta sm:gap-60 md:gap-96 lg:gap-[480px] mt-3'>
                         <div>2019 by Shree Group. Inc All right Reserved.</div>
-                        <div> Privacy Policy</div>
+                        <div><Link to='/policy'>Privacy Policy</Link></div>
                     </div>
                 </div>
             </div>

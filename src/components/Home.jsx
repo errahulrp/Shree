@@ -1,10 +1,12 @@
 import React from 'react';
 import myImage from '../images/kam1.jpg'
 import hum from '../images/ham.jpg'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div  >
+
+        <div >
             <div className=' absolute hidden sm:block opacity-10 mt-28 ml-28  text-gray-600 '>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth=" 0.1" stroke="currentColor" className=" w-96 h-96 ">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
@@ -30,7 +32,7 @@ const Home = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                     </svg>
                     <div className=' absolute mt-[490px] ml-32 sm:hidden shadow-xl'>
-                        <button className='px-4 py-1 bg-[#ECE7E1] text-xs backdrop-filter backdrop-blur-sm font-Smooch rounded-3xl'> Let's Connect</button>
+                        <button className='px-4 py-1 bg-[#ECE7E1] text-xs backdrop-filter backdrop-blur-sm font-Smooch rounded-3xl'> <Link to="/contact">Let's Connect</Link></button>
                     </div>
                 </div>
 
@@ -60,11 +62,12 @@ const Home = () => {
                 </div>
                 <img src={myImage} alt="Main Image" className={` hidden sm:block  sm:h-[50%] sm:w-[50%] lg:w-[60%] min-h-screen object-cover `} />
                 <div className=' absolute hidden md:block'>
-                    <button className='px-8 py-3 bg-transparent backdrop-filter backdrop-blur-sm text-[#ECC341] hover:text-black rounded-3xl font-Truculenta hover:bg-[#ECC341] duration-700'> Let's Connect</button>
-                </div>
+                    <Link to="/contact">  <button className='px-8 py-3 bg-transparent backdrop-filter backdrop-blur-sm text-[#ECC341] hover:text-black rounded-3xl font-Truculenta hover:bg-[#ECC341] duration-700'>Let's Connect</button>
+                    </Link>  </div>
             </div>
 
         </div>
+
     );
 };
 

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -7,29 +8,29 @@ const Navbar = () => {
     const handleMenu = (option) => {
         setMenu(option);
     }
+
     return (
         <div >
             <div className=' fixed z-20 top-0 w-full h-14 bg-[#D1CFCA] backdrop-filter backdrop-blur-xl shadow-lg'>
                 <div className=' flex justify-between'>
                     <div className='text-2xl font-Truculenta py-3 px-6 md:px-14 cursor-pointer '>
-                        <h1>Shree</h1>
+                        <h1><Link to='/'>Shree</Link></h1>
                     </div>
                     {/* this is for desktop */}
                     <div className=' py-4 px-7 hidden sm:block sm:text-sm '>
                         <ul className='flex justify-between font-semibold gap-7 px-8 '>
-                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'>ABOUT US</li>
-                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'>OUR SERVICES</li>
-                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'>PROJECTS</li>
-                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'>MEDIA</li>
+                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/">Home</Link></li>
+                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/about">About Us</Link></li>
+                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
-
+                    
+                    {/* This is for smartphones */}
                     <div className={` absolute right-7 top-9 cursor-pointer ${menu === 'open' ? 'hidden' : ''} bg-[#ECE7E1] rounded-lg backdrop-filter backdrop-blur-3xl`}>
-                        <ul className=' flex-col test-xs p-3  text-xs font-Salsa'>
-                            <li className='cursor-pointer'>ABOUT US</li>
-                            <li className='cursor-pointer'>OUR SERVICES</li>
-                            <li className='cursor-pointer'>PROJECTS</li>
-                            <li className='cursor-pointer'>MEDIA</li>
+                        <ul className=' flex-col test-xs p-6 text-xs font-Salsa'>
+                            <li className='cursor-pointer mb-2 border px-2 py-1 border-gray-700 rounded-2xl text-center w-20'><Link to='/'>Home</Link></li>
+                            <li className='cursor-pointer mb-2 border px-2 py-1 border-gray-700 rounded-2xl text-center w-20'><Link to='/about'>About Us</Link></li>
+                            <li className='cursor-pointer border px-2 py-1 border-gray-700 rounded-2xl text-center w-20'><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
                     <div onClick={() => handleMenu('close')} className={`  ${menu === 'close' ? 'hidden' : ''} sm:hidden px-3 py-4 cursor-pointer `}>
