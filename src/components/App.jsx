@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./Navbar";
 import Home from "../pages/HomePage";
 import Footer from "./Footer";
@@ -9,21 +9,24 @@ import ProjectShowcase from '../pages/ProjectShowcase';
 
 const App = () => {
   return (
-
     <BrowserRouter>
+      <div className="hidden md:block"> {/* Hide on mobile devices */}
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/policy' element={<Policy />} />
+          <Route path='/projectshowcase' element={<ProjectShowcase />} />
+        </Routes>
+        <Footer />
+      </div>
 
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/policy' element={<Policy />} />
-        <Route path ='/projectshowcase' element={<ProjectShowcase/>}></Route>
-      </Routes>
-      <Footer />
-
+      {/* Display a message for mobile devices */}
+      <div className="block md:hidden text-center p-4">
+        <p>Please view this site on a desktop device.</p>
+      </div>
     </BrowserRouter>
-
   );
 }
 
