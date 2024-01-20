@@ -20,6 +20,7 @@ const Navbar = () => {
                     <div className=' py-4 px-7 hidden sm:block sm:text-sm '>
                         <ul className='flex justify-between font-semibold gap-7 px-8 '>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/">Home</Link></li>
+                            <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/projectshowcase">Projects</Link></li>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/about">About Us</Link></li>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/contact">Contact</Link></li>
                         </ul>

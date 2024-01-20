@@ -6,7 +6,7 @@ const UpperFooter = () => {
     return (
         <div className=' hidden sm:block'>
             <div className='flex justify-center'>
-                <img src={background} alt="Background image" className=' sm:mt-48 md:mt-60 w-[90%] sm:h-48 md:h-60 lg:h-72 object-cover rounded-3xl opacity-75' />
+                <img src={background} alt="Background image" className=' sm:mt-48 md:mt-56 w-[90%] sm:h-48 md:h-60 lg:h-72 object-cover rounded-3xl opacity-75' />
             </div>
             <div className=' flex justify-center'>
                 <h1 className=' absolute sm:text-3xl md:text-4xl font-Salsa sm:-mt-28 md:-mt-32 lg:-mt-40 opacity-100 '>LET'S DISSCUSS YOUR PROJECT</h1>
