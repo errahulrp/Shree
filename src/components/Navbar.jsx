@@ -18,7 +18,7 @@ const Navbar = () => {
                     </div>
                     {/* this is for desktop */}
                     <div className=' py-4 px-7 hidden sm:block sm:text-sm '>
-                        <ul className='flex justify-between font-semibold gap-7 px-8 '>
+                        <ul className='flex justify-between font-semibold gap-7 px-8 font-Salsa'>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/">Home</Link></li>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/projectshowcase">Projects</Link></li>
                             <li className='hover:text-[#9A8565] duration-700 cursor-pointer'><Link to="/about">About Us</Link></li>

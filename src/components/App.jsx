@@ -10,7 +10,7 @@ import ProjectShowcase from '../pages/ProjectShowcase';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="hidden md:block"> {/* Hide on mobile devices */}
+      <div className="hidden md:block overflow-hidden"> {/* Hide on mobile devices */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
