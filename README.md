@@ -10,7 +10,7 @@ Welcome to the Shree Architectures website repository! This website is built usi
 
 To run the website locally, follow these steps:
 
-```bash
+
 # Navigate to the project directory
 cd shree-architectures
 
@@ -24,14 +24,14 @@ npm start
 If you like to contribute to the development of this website, feel free to fork the repository and submit a pull request.
 
 Issues
-If you encounter any issues or have suggestions for improvements, please open an issue.
+If you encounter any issues or have suggestions improvements, please open an issue.
 
 ## Deployment
 The website is currently deployed on Netlify at https://shreearchitectures.netlify.app.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file details.
 
-Thank you for visiting the Shree Architectures website!
+Thank you visiting the Shree Architectures website
 
 You can save this content into a file with a `.md` extension, such as `README.md`.
