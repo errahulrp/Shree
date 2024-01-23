@@ -21,7 +21,7 @@ npm install
 npm start
 
 ## Contributing
-If you'd like to contribute to the development of this website, feel free to fork the repository and submit a pull request.
+If you like to contribute to the development of this website, feel free to fork the repository and submit a pull request.
 
 Issues
 If you encounter any issues or have suggestions for improvements, please open an issue.
